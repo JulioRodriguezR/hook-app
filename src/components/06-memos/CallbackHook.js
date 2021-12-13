@@ -7,7 +7,9 @@ export const CallbackHook = () => {
   /**
    * 1. Cuando mandamos una funcion a un componente hijo
    * 2. Cuando existe un usEffect, para que no se dispare cada vez que se renderice 
-   */
+   *
+   * useCallback(fn, deps) es igual a useMemo(() => fn, deps)
+   **/
 
   const [counter, setCounter] = useState(10);
 
