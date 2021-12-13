@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 
 import { todoReducer } from './todoReducer';
-import './styles.scss';
+import './styles.css';
 
 const initialState = {
   id: new Date().getTime(),
@@ -12,6 +12,7 @@ const initialState = {
 export const TodoApp = () => {
 
   const [state] = useReducer(todoReducer, initialState);
+  console.log(state);
 
   return (
     <div>
