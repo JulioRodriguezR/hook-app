@@ -1,11 +1,9 @@
-import React from "react";
-
-import { Layout } from "./components/05-useLayoutEffect/Layout";
+import React from 'react'
 
 export const HookApp = () => {
-
-  return (
-    <Layout/>
-  )
-
-};
+    return (
+        <div>
+            <h1>Hola Mundo</h1>
+        </div>
+    )
+}

@@ -1,11 +1,13 @@
 import React, { useState, useRef, useLayoutEffect } from 'react'
 
 import { useFetch } from '../../hooks/useFetch';
+import { useCouter } from '../../hooks/useCouter';
 import './layout.css';
 
 export const Layout = () => {
 
-  const { data } = useFetch(`https://www.breakingbadapi.com/api/quotes/1`);
+  const { counter, increment } = useCouter(1);
+  const { data } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
   const { quote } = !!data && data[0];
 
   const pTag = useRef();
@@ -28,6 +30,13 @@ export const Layout = () => {
       </blockquote>
 
       <pre>{JSON.stringify(boxSize, null)}</pre>
+
+      <button
+        className="btn btn-primary"
+        onClick={increment}
+      >
+        Siguiente quote
+      </button>
 
     </div>
   )
