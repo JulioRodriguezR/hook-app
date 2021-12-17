@@ -29,19 +29,13 @@ export const TodoApp = () => {
   const handleDelete = (todoId) => {
     console.log(todoId);
     
-    dispatch({
-      type: 'delete',
-      payload: todoId 
-    });
+    dispatch({ type: 'delete', payload: todoId });
   };
 
   const handleToggle = (todoId) => {
     console.log(todoId);
 
-    dispatch({
-      type: 'toggle',
-      payload: todoId
-    });
+    dispatch({ type: 'toggle', payload: todoId });
   };
 
   const handleSubmit = (e) => {
@@ -50,15 +44,8 @@ export const TodoApp = () => {
 
     if (description.trim().lenght <= 1) return;
 
-    const newTodo = {
-      id: new Date().getTime(),
-      desc: description,
-      done: false
-    };
-    const action = {
-      type: 'add',
-      payload: newTodo
-    };
+    const newTodo = { id: new Date().getTime(), desc: description, done: false };
+    const action = { type: 'add', payload: newTodo };
 
     dispatch(action);
     reset();
