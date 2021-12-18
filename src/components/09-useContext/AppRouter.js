@@ -21,7 +21,7 @@ export const AppRouter = () => {
           <Route exact path="/" element={<HomeScreen />} />
           <Route exact path="/about" element={<AboutScreen />} />
           <Route exact path="/login" element={<LoginScreen />} />
-          <Navigate replace to="/" />
+          {/* <Navigate to="/" exact/> */}
         </Routes>
       </div>
     </Router>
