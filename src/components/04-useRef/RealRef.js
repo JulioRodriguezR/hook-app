@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { MultipleCustomHooks } from '../03-examples/MultipleCustomHooks';
-import '../02-useEffect/effects.css';
+import '../../effects.css';
 
 export const RealRef = () => {
 
@@ -12,7 +12,9 @@ export const RealRef = () => {
       <h1>Real Example Ref Hook</h1>
       <hr />
       {show && <MultipleCustomHooks />}
-      <button className="btn btn-primary mt-5" onClick={() => setShow(!show)}>Show/Hide</button>
+      <button className="btn btn-primary mt-5" onClick={() => setShow(!show)}>
+        Show/Hide
+      </button>
     </div>
   )
 }
