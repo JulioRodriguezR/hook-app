@@ -15,6 +15,7 @@ import { HookApp } from './HookApp';
 // import { Pater } from './components/07-memo-exercise/Pater';
 // import { TodoApp } from './components/08-useReducer/TodoApp';
 // import { MainApp } from './components/09-useContext/MainApp';
+import './effects.css';
 
 ReactDOM.render(
     <HookApp/>,

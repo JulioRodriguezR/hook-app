@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 
 import {useForm} from '../../hooks/useForm'
 
-import './effects.css';
+import '../../effects.css';
 
 export const FormWithCustomHook = () => {
 
