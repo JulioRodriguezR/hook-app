@@ -22,7 +22,14 @@ export const useFetch = (url) => {
         } else {
           console.log('No fetch');
         }
-      });
+      })
+      .catch(() => {
+        setState({
+          data: null,
+          loading: false,
+          error: 'Error loading'
+        })
+      })
   }, [url]);
 
   return (state);

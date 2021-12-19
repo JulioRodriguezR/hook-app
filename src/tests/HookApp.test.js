@@ -8,6 +8,6 @@ describe('Test in <HookApp />', () => {
   test('Should show correctly', () => {
    const wrapper = shallow(<HookApp />);
    expect(wrapper).toMatchSnapshot(); 
-  })
+  });
   
 });

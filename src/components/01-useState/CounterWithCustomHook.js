@@ -1,11 +1,11 @@
 import React from "react";
 
-import { useCouter } from "../../hooks/useCouterr";
+import { useCounter } from "../../hooks/useCounterr";
 import './counter.css';
 
 export const CounterWithCustomHook = () => {
 
-  const {state, increment, decrement, reset} = useCouter(100);
+  const {state, increment, decrement, reset} = useCounter(100);
 
   return (
     <>
