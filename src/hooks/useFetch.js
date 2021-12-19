@@ -7,6 +7,7 @@ export const useFetch = (url) => {
 
   useEffect(() => {
     return (() => {
+      console.log(isMounted);
       isMounted.current = false;
     })
   }, []);

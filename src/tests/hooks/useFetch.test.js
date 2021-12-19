@@ -18,6 +18,7 @@ describe('Test in useFetch', () => {
     await waitForNextUpdate();
 
     const {data, loading, error} = result.current;
+    console.log(data);
 
     expect(data.data.length > 0).toBe(true);
     expect(loading).toBe(false);
@@ -25,11 +26,11 @@ describe('Test in useFetch', () => {
   });
 
   test('return error', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useFetch('https://reqreasds.in/api/users?page=2'));
+    const { result, waitForNextUpdate } = renderHook(() => useFetch('https://reqres.in/apii/users?page=2'));
     await waitForNextUpdate();
 
     const { data, loading, error } = result.current;
-
+    
     expect(data).toBe(null);
     expect(loading).toBe(false);
     expect(error).toBe('Error loading');
