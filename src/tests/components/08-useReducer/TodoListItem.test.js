@@ -9,12 +9,14 @@ describe('Test in <TodoListItem />', () => {
   const handleDelete = jest.fn();
   const handleToggle = jest.fn();
 
-  const wrapper = shallow(<TodoListItem
-    todo={demoTodos[0]}
-    index={0}
-    handleDelete={handleDelete}
-    handleToggle={handleToggle}
-  />)
+  const wrapper = shallow(
+    <TodoListItem
+      todo={demoTodos[0]}
+      index={0}
+      handleDelete={handleDelete}
+      handleToggle={handleToggle}
+    />
+  )
 
   test('Should show correctly', () => {
     expect(wrapper).toMatchSnapshot();
@@ -27,11 +29,27 @@ describe('Test in <TodoListItem />', () => {
 
   test('Should show call handleToggle function', () => {
     wrapper.find('p').simulate('click');
-    expect(handleToggle).toHaveBeenCalledWith(demoTodos[0].id); 
+    expect(handleToggle).toHaveBeenCalledWith(demoTodos[0].id);
   });
 
   test('Should show text correctly', () => {
-    expect(wrapper.find('p').isEmptyRender()).toBe(false); 
+    const p = wrapper.find('p');
+    expect(p.isEmptyRender()).toBe(false);
+    expect(p.text().trim()).toBe(`1. ${demoTodos[0].desc}`);
+  });
+
+  test('Must have complete class if TODO.done = true', () => {
+    const todo = demoTodos[0];
+    todo.done = true;
+
+    const wrapper = shallow(
+      <TodoListItem
+        todo={todo}
+      />
+    );
+    console.log(wrapper.html());
+
+    expect(wrapper.find('p').hasClass('complete')).toBe(true);
   });
 
 });

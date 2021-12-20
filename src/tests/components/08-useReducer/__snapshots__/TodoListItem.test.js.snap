@@ -12,6 +12,7 @@ exports[`Test in <TodoListItem /> Should show correctly 1`] = `
     >
       1
       . 
+      Todo 1
     </p>
     <button
       className="btn btn-danger ml-2"
