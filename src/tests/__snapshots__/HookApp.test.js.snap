@@ -1,9 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test in <HookApp /> Should show correctly 1`] = `
-<div>
-  <h1>
-    Hola Mundo
-  </h1>
+<div
+  className="row"
+>
+  <div
+    className="col-4"
+    style={
+      Object {
+        "backgroundColor": "darkgray",
+        "borderBottom": "10px",
+        "width": "32%",
+      }
+    }
+  >
+    <h1
+      className="p-3"
+    >
+      Hook App
+    </h1>
+  </div>
+  <div
+    className="col-8"
+  />
 </div>
 `;
