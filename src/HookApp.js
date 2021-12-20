@@ -9,10 +9,10 @@ const bgrContent = {
 export const HookApp = () => {
     return (
         <div className='row'>
-            <div className='col-2' style={bgrContent}>
+            <div className='col-4' style={bgrContent}>
                 <h1 className='p-3'>Hook App</h1>
             </div>
-            <div className='col'></div>
+            <div className='col-8'></div>
         </div>
     )
 }
