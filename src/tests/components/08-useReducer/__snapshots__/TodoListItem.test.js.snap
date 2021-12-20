@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <TodoListItem /> Should show correctly 1`] = `
+<div>
+  <li
+    className="list-group-item"
+    key="1"
+  >
+    <p
+      className="false"
+      onClick={[Function]}
+    >
+      1
+      . 
+    </p>
+    <button
+      className="btn btn-danger ml-2"
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </li>
+</div>
+`;
