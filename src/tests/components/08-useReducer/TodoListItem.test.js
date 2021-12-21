@@ -22,7 +22,7 @@ describe('Test in <TodoListItem />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('Should show call handleDelete function', () => {
+  test('Should call handleDelete function', () => {
     wrapper.find('button').simulate('click');
     expect(handleDelete).toHaveBeenCalledWith(demoTodos[0].id);
   });
