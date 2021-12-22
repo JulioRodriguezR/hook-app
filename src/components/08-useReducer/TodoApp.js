@@ -23,18 +23,15 @@ export const TodoApp = () => {
   }, [todos]);
 
   const handleDelete = (todoId) => {
-    console.log(todoId);
-    
     dispatch({ type: 'delete', payload: todoId });
   };
 
   const handleToggle = (todoId) => {
-    console.log(todoId);
-
     dispatch({ type: 'toggle', payload: todoId });
   };
 
   const handleAddTodo = (newTodo) => {
+    console.log(todos);
     dispatch({ type: 'add', payload: newTodo });
   };
 

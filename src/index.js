@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { HookApp } from './HookApp';
+// import { HookApp } from './HookApp';
 // import { CounterApp } from './components/01-useState/CounterApp';
 // import { CounterWithCustomHook } from './components/01-useState/CounterWithCustomHook';
 // import { SimpleForm } from './components/02-useEffect/SimpleForm';
@@ -13,11 +13,11 @@ import { HookApp } from './HookApp';
 // import { MemoHook } from './components/06-memos/MemoHook';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
 // import { Pater } from './components/07-memo-exercise/Pater';
-// import { TodoApp } from './components/08-useReducer/TodoApp';
+import { TodoApp } from './components/08-useReducer/TodoApp';
 // import { MainApp } from './components/09-useContext/MainApp';
 import './effects.css';
 
 ReactDOM.render(
-    <HookApp/>,
+    <TodoApp/>,
   document.getElementById('root')
 );
