@@ -31,13 +31,13 @@ export const TodoApp = () => {
   };
 
   const handleAddTodo = (newTodo) => {
-    console.log(todos);
+    console.log(todos.length);
     dispatch({ type: 'add', payload: newTodo });
   };
 
   return (
     <div>
-      <h1>Todo App ({todos.lenght})</h1>
+      <h1>Todo App ({todos.length})</h1>
       <hr />
       <div className="row">
         <div className="col-7">

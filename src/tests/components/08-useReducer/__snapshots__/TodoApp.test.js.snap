@@ -4,6 +4,7 @@ exports[`Test in <TodoApp /> Should show correctly 1`] = `
 <div>
   <h1>
     Todo App (
+    0
     )
   </h1>
   <hr />
