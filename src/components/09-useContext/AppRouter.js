@@ -2,8 +2,7 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate
+  Route
 } from "react-router-dom";
 
 import { AboutScreen } from './AboutScreen';
